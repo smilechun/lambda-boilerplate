@@ -1,0 +1,39 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "comma-dangle": [
+            "error",
+            "always-multiline"
+        ],
+        "valid-jsdoc": ["error"],
+        "require-jsdoc": ["error", {
+            "require": {
+                "FunctionDeclaration": true,
+                "MethodDefinition": true,
+                "ClassDeclaration": true,
+                "ArrowFunctionExpression": true
+            }
+        }],
+        "no-console": "off"
+    }
+}
