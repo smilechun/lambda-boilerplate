@@ -1,22 +1,22 @@
 {
-	"name": "lambda-boilerplate",
-	"version": "0.0.0",
-	"description": "Basic AWS Lambda Boilerplate",
-	"main": "dist/index.js",
-	"scripts": {
-		"test": "cd src && mocha",
-		"build": "babel src -d dist",
-		"test-build": "cd dist && mocha"
-	},
-	"author": "Chun Fat, Tai",
-	"license": "ISC",
-	"dependencies": {
-		"request": "^2.81.0",
-		"request-promise": "^4.2.1"
-	},
-	"devDependencies": {
-		"babel-cli": "^6.26.0",
-		"babel-preset-env": "^1.6.0",
-    	"should": "^12.0.0"
-	}
+  "name": "lambda-boilerplate",
+  "version": "0.0.1",
+  "description": "Basic AWS Lambda Boilerplate",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "cd src && mocha",
+    "build": "babel src -d dist",
+    "test-build": "cd dist && mocha"
+  },
+  "author": "Chun Fat, Tai",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "should": "^12.0.0"
+  }
 }
