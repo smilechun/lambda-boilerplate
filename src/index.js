@@ -9,8 +9,22 @@ const util = require('./util')
  * @return {Void}              No return
  */
 function handler(event, context, callback) {
-	// TODO implement
-	util.response(200, {}, config, callback)
+	try {
+		context.callbackWaitsForEmptyEventLoop = false
+		
+		if (!event.body) throw new Error('Unexpected JSON Schema.')
+
+		const body = util.bodyJSONParser(event.body)
+
+		// TODO implement
+
+		util.response(200, {}, config, callback)
+
+	} catch (err) {
+		util.response(500, {}, {
+			error: err.message,
+		}, callback)
+	}
 }
 
 exports.handler = handler

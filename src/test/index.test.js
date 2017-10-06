@@ -6,8 +6,9 @@ describe('Unit Test - index.js', _ => {
 	describe('Test to success', _ => {
 		describe('handler()', _ => {
 			it('should return config file content', done => {
-				index.handler({}, {}, (err, response) => {
-					console.log(response)
+				index.handler({
+					body: {}
+				}, {}, (err, response) => {
 					response.should.have.properties([
 						'statusCode',
 						'body',
